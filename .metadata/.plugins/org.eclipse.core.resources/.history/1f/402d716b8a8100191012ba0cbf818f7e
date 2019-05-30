@@ -1,0 +1,11 @@
+package co.com.david.aopdemo.aspect;
+
+import org.aspectj.lang.annotation.Pointcut;
+
+public class MajorAspect {
+	
+	@Pointcut("execution(* co.com.david.aopdemo.controller.*.*(..))")
+	private void forControllerPackageAnyMethods() {
+	}
+
+}

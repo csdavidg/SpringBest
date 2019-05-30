@@ -1,0 +1,26 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+
+	<h1>Login</h1>
+	<form:form action="authenticateUser" method="POST">
+		<c:if test="${parame.error}">
+
+		</c:if>
+		<label>User name</label>
+		<input type="text" name="username" />
+		<br />
+		<label>Password</label>
+		<input type="password" name="password" />
+		<br />
+		<button action="submit">Login</button>
+	</form:form>
+
+</body>
+</html>

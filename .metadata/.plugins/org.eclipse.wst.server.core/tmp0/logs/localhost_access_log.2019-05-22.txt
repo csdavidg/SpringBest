@@ -1,0 +1,2 @@
+127.0.0.1 - - [22/May/2019:10:31:12 -0500] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [22/May/2019:10:31:13 -0500] "GET /spring-mvc-demo/WEB-INF/classes/co/com/david/mvc/main/Java8Test.java HTTP/1.1" 404 975

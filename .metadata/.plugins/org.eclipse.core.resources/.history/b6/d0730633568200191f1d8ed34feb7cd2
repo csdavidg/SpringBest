@@ -1,0 +1,26 @@
+package co.com.david.mvc.aspect;
+
+import java.util.logging.Logger;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+public class CRMLogginAspect {
+
+	private Logger logger = Logger.getLogger(getClass().getName());
+	
+	@Pointcut("ececution(* co.com.david.mvc.controller.*.*(..))")
+	private void forControllerPackage() {}
+	
+	@Pointcut("ececution(* co.com.david.mvc.dao.*.*(..))")
+	private void forDaoPackage() {}
+	
+	@Pointcut("ececution(* co.com.david.mvc.dao.*.*(..))")
+	private void forDaoPackasage() {}
+
+	
+	
+}

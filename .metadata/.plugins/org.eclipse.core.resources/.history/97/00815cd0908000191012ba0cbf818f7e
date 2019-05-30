@@ -1,0 +1,14 @@
+package com.david.springdemo.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Customer {
+
+	private Long id;
+
+	private String firstName;
+	private String lastName;
+	private String email;
+
+}

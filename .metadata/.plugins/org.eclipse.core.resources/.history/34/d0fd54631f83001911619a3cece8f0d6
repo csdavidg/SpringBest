@@ -1,0 +1,23 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+
+	<h1>Login</h1>
+	<form:form action="${pageContext.request.contextPath}/authenticateUser"
+		method="POST">
+		<label>User name</label>
+		<input type="text" name="username" />
+		<br />
+		<label>Password</label>
+		<input type="text" name="password" />
+		<br />
+		<button action="submit">Login</button>
+	</form:form>
+
+</body>
+</html>

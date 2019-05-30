@@ -1,0 +1,5 @@
+package co.com.david.springdemo.config;
+
+public class SpringDemoConfig {
+
+}

@@ -1,0 +1,41 @@
+package co.com.david.springdemo.aspect;
+
+import java.util.logging.Logger;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+public class CRMLogginAspect {
+
+	private Logger logger = Logger.getLogger(getClass().getName());
+
+	@Pointcut("ececution(* co.com.david.springdemo.controller.*.*(..))")
+	private void forControllerPackage() {
+	}
+
+	@Pointcut("ececution(* co.com.david.springdemo.dao.*.*(..))")
+	private void forDaoPackage() {
+	}
+
+	@Pointcut("ececution(* co.com.david.springdemo.service.*.*(..))")
+	private void forServicePackage() {
+	}
+
+	@Pointcut("forControllerPackage() || forDaoPackage() || forServicePackage()")
+	private void forAppFlow() {
+	}
+
+	@Before("forAppFlow()")
+	public void before(JoinPoint joinPoint) {
+		String method = joinPoint.getSignature().toShortString();
+		logger.info("Before Method: " + method);
+		
+		
+	}
+
+}

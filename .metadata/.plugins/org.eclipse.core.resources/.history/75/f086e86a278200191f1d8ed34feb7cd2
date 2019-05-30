@@ -1,0 +1,25 @@
+package co.com.david.aopdemo.main;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import co.com.david.aopdemo.AopConfig;
+import co.com.david.aopdemo.dao.AccountDAO;
+
+public class MainDemoAfterApp {
+
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AopConfig.class);
+
+		AccountDAO accountDAO = context.getBean("accountDAO", AccountDAO.class);
+		try {
+			System.out.println("Accounts: \n");
+
+			accountDAO.findAccounts().forEach(System.out::println);
+		} catch (Exception e) {
+			System.out.println("Exception have been throwing: " + e.getMessage());
+		}
+
+		context.close();
+	}
+
+}

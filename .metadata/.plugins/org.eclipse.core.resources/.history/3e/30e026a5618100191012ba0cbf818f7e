@@ -1,0 +1,5 @@
+package co.com.david.aopdemo.entity;
+
+public class Account {
+
+}

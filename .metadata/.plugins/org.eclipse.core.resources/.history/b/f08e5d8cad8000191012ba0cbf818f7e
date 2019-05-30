@@ -1,0 +1,7 @@
+package com.david.springdemo.service;
+
+public interface CustomerService {
+
+	public List<Customer> getCustomers;
+	
+}
