@@ -20,17 +20,25 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
 		UserBuilder userBuilder = User.builder().passwordEncoder(passwordEncoder::encode);
 
-		auth.inMemoryAuthentication().withUser(userBuilder.username("employee").password("12345").roles("EMPLOYEE"))
-				.withUser(userBuilder.username("manager").password("12345").roles("MANAGER"))
-				.withUser(userBuilder.username("admin").password("12345").roles("ADMIN"));
-
+		auth.inMemoryAuthentication()
+			.withUser(userBuilder.username("employee").password("12345").roles("EMPLOYEE"))
+			.withUser(userBuilder.username("manager").password("12345").roles("EMPLOYEE", "MANAGER"))
+			.withUser(userBuilder.username("admin").password("12345").roles("EMPLOYEE", "ADMIN"));
 	}
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().anyRequest().authenticated().and().formLogin().loginPage("/loginPage")
-				.loginProcessingUrl("/authenticateUser").permitAll()
-				.and().logout().permitAll();
+		http.authorizeRequests()
+		.antMatchers("/").hasRole("EMPLOYEE")
+		.antMatchers("/leaders/**").hasRole("MANAGER")
+		.antMatchers("/systems/**").hasRole("ADMIN")
+		.anyRequest().authenticated()
+		.and()
+		.formLogin().loginPage("/loginPage").loginProcessingUrl("/authenticateUser").permitAll()
+		.and()
+		.logout().permitAll()
+		.and()
+		.exceptionHandling().accessDeniedPage("/access-denied");
 	}
 
 }

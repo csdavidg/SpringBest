@@ -5,6 +5,8 @@ C:\workspace\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\426156
 \web-customer-tracker\src
 C:\workspace\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1321530066.index
 \spring-security-demo\src\main\java
+C:\workspace\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2669983444.index
+\spring-security-demo-jdbc\src\main\java
 C:\workspace\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\237508677.index
 \spring-mvc-demo\src
 C:\workspace\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\715998994.index
