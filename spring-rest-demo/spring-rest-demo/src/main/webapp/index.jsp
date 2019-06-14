@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring Rest Demo</title>
+</head>
+<body>
+
+	<h1>Spring Rest Demo</h1>
+</body>
+</html>

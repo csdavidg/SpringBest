@@ -10,13 +10,13 @@
 	</section>
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=mycoolap-springboot/C:\/Users\/cristian.sanchez\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/2.1.5.RELEASE\/spring-boot-2.1.5.RELEASE.jar&amp;lt;org.springframework.boot(SpringApplication.class[SpringApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=mycoolap-springboot/src\/main\/java&amp;lt;com.david.springboot.demo.mycoolapspringboot.controller.testas{MycoolapSpringbootApplication.java[MycoolapSpringbootApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=mycoolap-springboot/src\/main\/java&amp;lt;com.david.springboot.demo.mycoolapspringboot.controller.sas{MycoolapSpringbootApplication.java[MycoolapSpringbootApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=mycoolap-springboot/src\/main\/java&amp;lt;com.david.springboot.demo.mycoolapspringboot{MycoolapSpringbootApplication.java[MycoolapSpringbootApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
 		<section name="DialogBoundsSettings">
-			<item key="DIALOG_HEIGHT" value="500"/>
-			<item key="DIALOG_WIDTH" value="600"/>
-			<item key="DIALOG_X_ORIGIN" value="1151"/>
-			<item key="DIALOG_Y_ORIGIN" value="458"/>
-			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+			<item key="DIALOG_HEIGHT" value="894"/>
+			<item key="DIALOG_WIDTH" value="694"/>
+			<item key="DIALOG_X_ORIGIN" value="781"/>
+			<item key="DIALOG_Y_ORIGIN" value="57"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|11.0|0|WINDOWS|1|-22|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI"/>
 		</section>
 	</section>
 </section>

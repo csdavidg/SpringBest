@@ -1,5 +1,0 @@
-package com.david.springdemo.dao;
-
-public interface CustomerDAO {
-
-}

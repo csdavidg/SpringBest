@@ -1,5 +1,0 @@
-package com.david.springdemo.service;
-
-public interface CustomerService {
-
-}

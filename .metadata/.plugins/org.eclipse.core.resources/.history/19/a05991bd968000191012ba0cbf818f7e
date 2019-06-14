@@ -1,7 +1,0 @@
-package com.david.springdemo.dao;
-
-public interface CustomerDAO {
-
-	public List<> getCustomers();
-	
-}

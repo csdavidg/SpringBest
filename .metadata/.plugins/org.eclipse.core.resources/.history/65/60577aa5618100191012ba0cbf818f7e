@@ -1,9 +1,0 @@
-package co.com.david.aopdemo.entity;
-
-public class Account {
-
-	private Long id;
-	
-	private Long number;
-	
-}
